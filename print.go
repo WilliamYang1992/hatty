@@ -12,6 +12,7 @@ func ToJSON(v interface{}) (string, error) {
 }
 
 // Transform to JSON, output as string, if error occurred,
+// panic it
 func MustToJSON(v interface{}) string {
 	data, err := json.Marshal(v)
 	if err != nil {
